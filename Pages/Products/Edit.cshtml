@@ -1,0 +1,50 @@
+﻿@page
+@model AtulaHomeFurniture.Pages.Products.EditModel
+
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<h1>Edit Product</h1>
+
+<form method="post">
+    <div class="mb-3">
+       <input asp-for="Product.Id" type="hidden" />
+
+        <div class="form-group">
+            <label asp-for="Product.Name"></label>
+            <input asp-for="Product.Name" class="form-control" />
+            <span asp-validation-for="Product.Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Sku"></label>
+            <input asp-for="Product.Sku" class="form-control" />
+            <span asp-validation-for="Product.Sku" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SelectedCategoryIds">Categories</label>
+            <select asp-for="SelectedCategoryIds"
+                    asp-items="@(new MultiSelectList(Model.Categories, "Id", "Name"))"
+                    class="form-control"
+                    multiple="multiple">
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                toastr.success(successMessage);
+            }
+        });
+    </script>
+}

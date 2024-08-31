@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<!-- Background Section -->
+<div class="bg-image d-flex align-items-center justify-content-center" style="height: 83vh;">
+    <!-- Main Content -->
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <!-- Users Module -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white border-light shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Users</h5>
+                        <p class="card-text">Manage user accounts and roles.</p>
+                        <a href="/Users/Index" class="btn btn-warning">Manage Users</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Module -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white border-light shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Products</h5>
+                        <p class="card-text">Add, edit, delete and view products.</p>
+                        <a href="/Products/Index" class="btn btn-warning">Manage Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Module -->
+            <div class="col-md-4 mb-4">
+                <div class="card bg-dark text-white border-light shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Categories</h5>
+                        <p class="card-text">Manage product categories.</p>
+                        <a href="/Categories/Index" class="btn btn-warning">Manage Categories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

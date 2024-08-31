@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+<!-- Full-Height Background Image -->
+<div class="d-flex align-items-center justify-content-center" 
+     style="background-image: url('@Url.Content("~/images/welcome-background.jpg")'); 
+            height: 83vh; 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat;">
+    
+    <!-- Centered Content -->
+        <div class="welcome-text text-center text-white">
+            <h1 class="display-4 font-weight-bold">Welcome to Atula Home Furniture</h1>
+            <p class="lead mt-4">
+                Transform your home with our exquisite furniture collections. Whether you’re looking for contemporary or classic designs, we have something for every taste.
+            </p>
+            <p class="lead">
+                Explore our range of premium furniture and create the home of your dreams.
+            </p>
+        </div>
+</div>
+
+</div>

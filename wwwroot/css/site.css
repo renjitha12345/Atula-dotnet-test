@@ -1,0 +1,120 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+/*  margin-bottom: 60px;*/
+}
+.container-fluid {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+/* Header & Footer Styles */
+header, footer {
+    background-color: #000; /* Black background */
+    color: #FFD700; /* Gold text color */
+    border-top: 4px solid #8B4513; /* Brown border at the top of the footer */
+}
+
+/* Navbar Brand and Links */
+.navbar-brand {
+    color: #FFD700 !important; /* Gold brand name */
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #FFD700 !important; /* Gold links */
+}
+
+    .nav-link:hover {
+        color: #8B4513 !important; /* Brown hover effect */
+    }
+
+/* Main Content Area */
+main {
+    background-color: #8B4513; /* Brown background for main content */
+    color: #FFF; /* White text for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+/* Footer Links */
+footer a {
+    color: #FFD700 !important; /* Gold links in the footer */
+    text-decoration: none;
+}
+
+    footer a:hover {
+        color: #FFF !important; /* White on hover for footer links */
+    }
+
+/* Custom CSS for the dashboard page */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Custom card styling */
+.card {
+    background-color: #333; /* Dark background for the card */
+}
+
+.card-title {
+    color: #FFD700; /* Gold color for card titles */
+}
+
+.card-text {
+    color: #f8f9fa; /* Light text color */
+}
+
+.btn-warning {
+    background-color: #FFD700; /* Gold color for buttons */
+    border-color: #FFD700;
+}
+
+/* Style for the welcome text container */
+.welcome-text {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+    /* Text shadow for better visibility and effect */
+    .welcome-text h1,
+    .welcome-text p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
